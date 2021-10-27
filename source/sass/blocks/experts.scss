@@ -19,23 +19,24 @@
   list-style: none;
   padding-left: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   grid-column-gap: 20px;
 }
 
 .experts__item {
   position: relative;
-  max-width: 255px;
+  max-width: 210px;
 }
 
 .experts__item::before {
   content: "";
   position: absolute;
-  background-image: url(/img/dots-white.png);
+  background-image: url("/img/dots-white.png");
+  background-repeat: no-repeat;
   width: 130px;
   height: 164px;
   top: -20px;
-  right: 42px;
+  right: 3px;
   background-color: transparent;
 }
 
