@@ -1,0 +1,17 @@
+.experts {
+  margin-bottom: 50px;
+}
+
+.experts__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.experts__list {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-column-gap: 20px;
+}
