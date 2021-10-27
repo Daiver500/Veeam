@@ -7,6 +7,13 @@
   flex-direction: column;
 }
 
+.experts__header {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 .experts__list {
   margin-top: 0;
   list-style: none;
@@ -14,4 +21,44 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-column-gap: 20px;
+}
+
+.experts__item {
+  position: relative;
+  max-width: 255px;
+}
+
+.experts__item::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/dots-white.png);
+  width: 130px;
+  height: 164px;
+  top: -20px;
+  right: 42px;
+  background-color: transparent;
+}
+
+.experts__item--active  .experts__image {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.experts__image {
+  position: relative;
+  border-radius: 50px;
+  width: 164px;
+  height: 158px;
+}
+
+.experts__title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.experts__text {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: $dark-grey;
 }

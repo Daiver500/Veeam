@@ -1,3 +1,8 @@
+.footer {
+  align-self: flex-end;
+  background-color: $grey;
+}
+
 .footer__inner {
   display: flex;
   justify-content: space-between;
