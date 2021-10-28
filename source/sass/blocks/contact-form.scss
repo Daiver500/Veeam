@@ -1,3 +1,18 @@
+.form {
+  position: relative;
+}
+
+.form::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/dots.png");
+  width: 68px;
+  height: 503px;
+  top: -55px;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
 .contact__form {
   background-color: $dark-green;
 }
@@ -5,5 +20,136 @@
 .form__inner {
   max-width: 1120px;
   padding-top: 50px;
-  padding-bottom: 50px
+  padding-bottom: 150px;
+  max-width: 800px;
+}
+
+.form__body {
+  width: 100%;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: $white;
+  color: $black;
+  border: 0;
+  min-width: 390px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.form__checkboxes {
+  margin-bottom: 10px;
+}
+
+.checkbox__label {
+  position: relative;
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+}
+
+.checkbox__text,
+.form__text {
+  color: $white;
+}
+
+.checkbox__text {
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  max-width: 330px;
+}
+
+.checkbox__input:checked + .checkbox__text {
+  background-image: url("../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.form__policy {
+  margin-bottom: 25px;
+}
+
+.form__text {
+  margin : 0;
+}
+
+.form__link {
+  color: $form-link;
+}
+
+.form__link:hover,
+.form__link:focus {
+  opacity: 0.5;
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  color: $form-button-text;
+  background-color: $form-button;
+  max-width: 390px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: $white;
+  color: $black;
+}
+
+@media (max-width: 1200px) {
+  .form:after {
+    display: none;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .form__inner {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .form__input {
+    min-width: 100%;
+  }
+
+  .checkbox__text {
+    max-width: 100%;
+  }
+
+  .form__button {
+    max-width: 100%;
+  }
 }

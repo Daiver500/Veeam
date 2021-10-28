@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   grid-column-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 .experts__item {
@@ -67,4 +68,25 @@
 
 .experts__text span {
   text-transform: uppercase;
+}
+
+@media (max-width: $max-tablet-width) {
+  .experts {
+    margin-bottom: 30px;
+  }
+
+  .experts__header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .experts__image {
+    width: 134px;
+    height: 128px;
+  }
+
+  .experts__item::before {
+    top: -28px;
+    right: 38px;
+  }
 }

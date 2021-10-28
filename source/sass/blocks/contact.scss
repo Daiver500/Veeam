@@ -5,6 +5,9 @@
   margin-bottom: 50px;
 }
 
-.test {
-  background-color: $dark-green;
+@media (max-width: $max-tablet-width) {
+  .contact {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
 }

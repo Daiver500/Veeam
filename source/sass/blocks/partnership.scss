@@ -40,6 +40,7 @@
   border-radius: 20px;
   width: 365px;
   height: 209px;
+  cursor: pointer;
 }
 
 .video__text {
@@ -99,5 +100,36 @@
 
 .access__button:hover,
 .access__button:focus {
-  opacity: 0.5;
+  background-color: $white;
+  border: 1px solid $dark-green;
+  color: $black;
+}
+
+@media (max-width: $max-tablet-width) {
+  .partnership__header {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .partnership__programm {
+    flex-direction: column;
+  }
+
+  .partnership__video {
+    margin-bottom: 20px;
+  }
+
+  .video__body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .partnership__information {
+    max-width: 100%;
+  }
+
+  .access__header {
+    max-width: 100%;
+  }
 }
