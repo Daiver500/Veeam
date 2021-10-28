@@ -90,3 +90,35 @@
     right: 38px;
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .experts__list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .experts__item {
+    position: relative;
+    max-width: 140px;
+  }
+
+  .experts__item::before {
+    top: -25px;
+    right: 0;
+  }
+
+  .experts__title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 25px;
+  }
+
+  .experts__image {
+    width: 114px;
+    height: 108px;
+  }
+
+  .experts__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

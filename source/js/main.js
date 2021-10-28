@@ -1,5 +1,39 @@
 "use strict";
 
+const data = [
+    {
+      "id": 1,
+      "photo": "img/face-allan.jpg",
+      "name": "Danny Allan",
+      "position": "Chief Technology Officer"
+    },
+    {
+      "id": 2,
+      "photo": "img/face-olivier.jpg",
+      "name": "Olivier Robinne",
+      "position": "Vice President, EMEA"
+    },
+    {
+      "id": 3,
+      "photo": "img/face-mike.jpg",
+      "name": "Mike Resseler",
+      "position": "Director Product Management"
+    },
+    {
+      "id": 4,
+      "photo": "img/face-rick.jpg",
+      "name": "Rick Vanover",
+      "position": "Senior Director, Product Strategy"
+    },
+    {
+      "id": 5,
+      "photo": "img/face-michael.jpg",
+      "name": "Michael Cade",
+      "position": "Senior Global Technologist, Product Strategy",
+    }
+
+]
+
 // Modal window
 
 const openModalButton = document.querySelector(".details__button");
@@ -43,7 +77,3 @@ const windowClickHandler = (evt) => {
 
 openModalButton.addEventListener("click", openModal)
 
-window.main = {
-  closeModal,
-  escPressHandler,
-}

@@ -127,9 +127,30 @@
 
   .partnership__information {
     max-width: 100%;
+    padding-left: 0;
   }
 
   .access__header {
     max-width: 100%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .partnership__access {
+    flex-direction: column;
+  }
+
+  .partnership__inner::after {
+    width: 95%;
+  }
+
+  .access__header {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .access__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

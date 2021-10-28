@@ -89,3 +89,29 @@
     padding-right: 50px;;
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer__text,
+  .footer__item:not(:last-child) {
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .footer__list {
+    align-items: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+}
