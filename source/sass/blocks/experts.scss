@@ -27,6 +27,7 @@
 .experts__item {
   position: relative;
   max-width: 210px;
+  cursor: pointer;
 }
 
 .experts__item::before {
@@ -50,7 +51,6 @@
   border-radius: 50px;
   width: 164px;
   height: 158px;
-  cursor: pointer;
 }
 
 .experts__title {
