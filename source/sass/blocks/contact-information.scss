@@ -1,6 +1,6 @@
 .contact__information {
   background-color: $medium-green;
-  background-image: url("/img/top-img.png");
+  background-image: url("../img/top-img.png");
   background-repeat: no-repeat;
   background-position: 88% 75%;
   display: flex;
@@ -11,7 +11,7 @@
 .contact__information:after {
   position: absolute;
   content: "";
-  background-image: url("/img/mixed-dots.png");
+  background-image: url("../img/mixed-dots.png");
   width: 100px;
   height: 503px;
   bottom: -181px;

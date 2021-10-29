@@ -26,6 +26,7 @@ const showSuccessModal = () => {
   </button>
   </div>`
   body.prepend(successModal);
+  successModal.classList.add("bounce")
   setTimeout(() => {
     successModal.remove();
     body.style.overflow = "visible";
