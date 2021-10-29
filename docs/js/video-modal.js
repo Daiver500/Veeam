@@ -6,6 +6,7 @@ const closeVideoModalButton = document.querySelector(".modal-video__close");
 
 const openVideoModal = () => {
   modalVideo.classList.remove("hidden");
+  modalVideo.classList.add("fadeIn")
   body.style.overflow = "hidden";
   document.addEventListener("keyup", escPressHandler);
   document.addEventListener("click", windowClickHandler);
@@ -13,6 +14,7 @@ const openVideoModal = () => {
 
 const closeVideoModal = () => {
   modalVideo.classList.add("hidden");
+  modalVideo.classList.remove("fadeIn")
   body.style.overflow = "visible";
   document.removeEventListener("keyup", escPressHandler);
   document.removeEventListener("click", windowClickHandler);
