@@ -1,7 +1,5 @@
 "use strict";
 
-// Modal window on submit
-
 const form = document.querySelector(".form__body");
 const body = document.querySelector(".page");
 
