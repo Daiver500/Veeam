@@ -3,6 +3,8 @@
 const data = [
     {
       "id": 1,
+      "webp": "img/face-allan.webp",
+      "webp2x": "img/face-allan@2x.webp 2x",
       "photo": "img/face-allan.jpg",
       "photo2x": "img/face-allan@2x.jpg 2x",
       "name": "Danny Allan",
@@ -10,6 +12,8 @@ const data = [
     },
     {
       "id": 2,
+      "webp": "img/face-olivier.webp",
+      "webp2x": "img/face-olivier@2x.webp 2x",
       "photo": "img/face-olivier.jpg",
       "photo2x": "img/face-olivier@2x.jpg 2x",
       "name": "Olivier Robinne",
@@ -17,6 +21,8 @@ const data = [
     },
     {
       "id": 3,
+      "webp": "img/face-mike.webp",
+      "webp2x": "img/face-mike@2x.webp 2x",
       "photo": "img/face-mike.jpg",
       "photo2x": "img/face-mike@2x.jpg 2x",
       "name": "Mike Resseler",
@@ -24,6 +30,8 @@ const data = [
     },
     {
       "id": 4,
+      "webp": "img/face-rick.webp",
+      "webp2x": "img/face-rick@2x.webp 2x",
       "photo": "img/face-rick.jpg",
       "photo2x": "img/face-rick@2x.jpg 2x",
       "name": "Rick Vanover",
@@ -31,6 +39,8 @@ const data = [
     },
     {
       "id": 5,
+      "webp": "img/face-michael.webp",
+      "webp2x": "img/face-michael@2x.webp 2x",
       "photo": "img/face-michael.jpg",
       "photo2x": "img/face-michael@2x.jpg 2x",
       "name": "Michael Cade",
@@ -46,6 +56,7 @@ const createCard = (item) => {
   newCard.classList.add("experts__item");
   newCard.innerHTML = `
   <picture class="experts__picture">
+    <source type="image/webp" srcset="${item.webp}, ${item.webp2x}" />
     <img class="experts__image" src="${item.photo}" srcset="${item.photo2x}" alt="employer card" width="164" height="158">
   </picture>
   <div class="experts__details">
