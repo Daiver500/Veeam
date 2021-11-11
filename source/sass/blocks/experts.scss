@@ -49,8 +49,8 @@
 .experts__image {
   position: relative;
   border-radius: 50px;
-  width: 164px;
-  height: 158px;
+  max-width: 164px;
+  max-height: 158px;
 }
 
 .experts__title {
@@ -78,22 +78,24 @@
   .experts__header {
     font-size: 32px;
     line-height: 38px;
+    text-align: center;
   }
 
-  .experts__image {
-    width: 134px;
-    height: 128px;
+  .experts__list {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .experts__item::before {
-    top: -28px;
-    right: 38px;
+    top: -21px;
+    right: 3px;
   }
 }
 
 @media (max-width: $max-mobile-width) {
   .experts__list {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-column-gap: 30px;
+    justify-items: center;
   }
 
   .experts__item {
@@ -102,7 +104,8 @@
   }
 
   .experts__item::before {
-    top: -25px;
+    top: -23px;
+    left: 52px;
     right: 0;
   }
 
@@ -112,13 +115,12 @@
     margin-top: 25px;
   }
 
-  .experts__image {
-    width: 114px;
-    height: 108px;
-  }
-
   .experts__text {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .experts__details {
+    text-align: center;
   }
 }
