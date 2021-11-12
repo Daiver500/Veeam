@@ -3,6 +3,7 @@
 const videoButton = document.querySelector(".access__button");
 const modalVideo = document.querySelector(".modal-video");
 const closeVideoModalButton = document.querySelector(".modal-video__close");
+const modalVideoInner = document.querySelector(".modal-video__inner");
 
 const openVideoModal = () => {
   modalVideo.classList.remove("hidden");
@@ -10,6 +11,7 @@ const openVideoModal = () => {
   body.style.overflow = "hidden";
   document.addEventListener("keyup", escPressHandler);
   document.addEventListener("click", windowClickHandler);
+  modalVideo.append(modalVideoInner);
 }
 
 const closeVideoModal = () => {
@@ -18,6 +20,7 @@ const closeVideoModal = () => {
   body.style.overflow = "visible";
   document.removeEventListener("keyup", escPressHandler);
   document.removeEventListener("click", windowClickHandler);
+  modalVideoInner.remove();
 }
 
 const escPressHandler = (evt) => {
