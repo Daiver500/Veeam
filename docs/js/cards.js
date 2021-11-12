@@ -40,7 +40,7 @@ const data = [
     {
       "id": 5,
       "webp": "img/face-michael.webp",
-      "webp2x": "img/face-michaely@2x.webp 2x",
+      "webp2x": "img/face-michael@2x.webp 2x",
       "photo": "img/face-michael.jpg",
       "photo2x": "img/face-michael@2x.jpg 2x",
       "name": "Michael Cade",

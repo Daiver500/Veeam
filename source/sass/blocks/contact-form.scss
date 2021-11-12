@@ -129,12 +129,6 @@
   color: $black;
 }
 
-@media (max-width: 1200px) {
-  .form:after {
-    display: none;
-  }
-}
-
 @media (max-width: $max-tablet-width) {
   .form__inner {
     max-width: 100%;
@@ -151,5 +145,9 @@
 
   .form__button {
     max-width: 100%;
+  }
+
+  .form:after {
+    display: none;
   }
 }

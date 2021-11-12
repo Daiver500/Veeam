@@ -39,6 +39,19 @@
   color: $dark-grey;
 }
 
+.footer__item {
+  position: relative;
+}
+
+.footer__item::before {
+  content: "";
+  border-left: 1px solid #b7b7b7;
+  position: absolute;
+  bottom: 5px;
+  height: 15px;
+  left: -9px;
+}
+
 .footer__item:not(:last-child) {
    padding-right: 20px;
 }

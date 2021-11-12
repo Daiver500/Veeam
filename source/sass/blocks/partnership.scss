@@ -93,13 +93,14 @@
 }
 
 .access__button {
-  padding: 5px 20px;
+  padding: 0 50px;
   color: $white;
   text-transform: uppercase;
   background-color: $button;
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  max-height: 45px;
 }
 
 .access__button:hover,
@@ -136,6 +137,10 @@
 
   .access__header {
     max-width: 100%;
+  }
+
+  .access__button {
+    padding: 10px 50px;
   }
 }
 

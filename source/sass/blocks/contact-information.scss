@@ -64,9 +64,9 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1130px) {
   .contact__information:after {
-    display: none;
+    left: -26px;
   }
 }
 
@@ -79,5 +79,15 @@
   .contact__information {
     background-position: 88% 94%;
     background-size: 17vh;
+  }
+
+  .contact__information:after {
+    display: none;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .contact__information {
+    background-image: url("../img/top-img@2x.png");
   }
 }
