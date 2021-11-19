@@ -1,6 +1,26 @@
 .contact {
-  background-color: $dark-green;
+  background-color: $medium-green;
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 57% 43%;
+}
+
+@media (min-width: 2560px) {
+  .contact {
+    grid-template-columns: 56% 44%;
+  }
+}
+
+@media (min-width: 3200px) {
+  .contact {
+    grid-template-columns: 55% 45%;
+  }
+}
+
+@media (min-width: 4600px) {
+  .contact {
+    grid-template-columns: 53% 47%;
+  }
 }
 
 .contact__wrapper {
