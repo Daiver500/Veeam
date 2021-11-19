@@ -1,8 +1,10 @@
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: $dark-green;
   margin-bottom: 50px;
+}
+
+.contact__wrapper {
+  display: flex;
 }
 
 @media (max-width: $max-tablet-width) {

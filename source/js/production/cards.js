@@ -1,6 +1,6 @@
 "use strict";
 
-const data = [
+const info = [
     {
       "id": 1,
       "webp": "img/face-allan.webp",
@@ -73,4 +73,4 @@ const fillCardsList = (data) => {
   })
   expertCards = document.querySelectorAll(".experts__item");
 }
-fillCardsList(data);
+fillCardsList(info);

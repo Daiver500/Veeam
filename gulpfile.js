@@ -13,6 +13,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
+const concat = require("gulp-concat");
 
 // Styles
 
@@ -88,7 +89,7 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/video/**",
-    "source/js/**",
+    // "source/js/**",
     "source/*.ico",
     "source/*.html"
   ], {
@@ -107,6 +108,16 @@ const clean = () => {
 
 exports.clean = clean;
 
+//JS
+
+const js = () => {
+  return gulp.src("source/js/production/*.js")
+  .pipe(concat("bundle.js"))
+  .pipe(gulp.dest("source/js"))
+  .pipe(gulp.dest("docs/js"));
+}
+exports.js = js;
+
 //Build
 
 const build = () => gulp.series (
@@ -116,7 +127,8 @@ const build = () => gulp.series (
   images,
   //sprite,
   htmlinclude,
-  imageswebp
+  imageswebp,
+  js
 );
 
 exports.build = build();
@@ -154,6 +166,7 @@ exports.html = html;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series("html", "htmlinclude", sync.reload));
+  gulp.watch("source/js/production/*.js").on("change", gulp.series("js"))
 };
 
 exports.default = gulp.series(
